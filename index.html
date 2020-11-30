@@ -6,12 +6,13 @@
   <!-- build:css css/main.css -->
   <link rel="stylesheet" href="node_modules/bootswatch/dist/sketchy/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
   <!-- endbuild -->
   <title>Expense Tracker</title>
 </head>
 <body>
   <nav class="navbar navbar-light bg-light navbar-expand-sm m-2">
-    <div class="container">
+    <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,19 +33,101 @@
     </div>
   </nav>
 
-  <div class="container-fluid m-2">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-sm-3 card">
+      <div class="col-sm-12 col-md-5 col-lg-4">
+        <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <div class="row">
+              <div class="col-12 col-sm-auto mx-auto">
+                <h4 class="card-title text-center">
+                  Accounts
+                </h4>
+              </div>
+              <div class="col-12 col-sm-auto mx-auto">
+                <div class="row">
+                  <div class="col">
+                    <button type="button" class="btn btn-link">
+                      <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-link">
+                      <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-link">
+                      <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-secondary active">
+                    <input type="checkbox" autocomplete="off"> Cash
+                  </label>
+                  <label class="btn btn-outline-secondary active">
+                    <input type="checkbox" autocomplete="off"> Bank A
+                  </label>
+                  <label class="btn btn-outline-secondary">
+                    <input type="checkbox" autocomplete="off"> Bank B
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-auto mx-auto">
+                <h4 class="card-title text-center">
+                  Categories
+                </h4>
+              </div>
+              <div class="col-12 col-sm-auto mx-auto">
+                <div class="row">
+                  <div class="col">
+                    <button type="button" class="btn btn-link">
+                      <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-link">
+                      <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-link">
+                      <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-secondary active">
+                    <input type="checkbox" autocomplete="off"> Cash
+                  </label>
+                  <label class="btn btn-outline-secondary active">
+                    <input type="checkbox" autocomplete="off"> Bank A
+                  </label>
+                  <label class="btn btn-outline-secondary">
+                    <input type="checkbox" autocomplete="off"> Bank B
+                  </label>
+                </div>
+              </div>
+            </div>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="card-link">Card link</a>
             <a href="#" class="card-link">Another link</a>
           </div>
+        </div>
       </div>
-      <div class="col col-sm-6 bg-light">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam, labore earum dolorum nam eaque molestiae distinctio reprehenderit autem odit iste ex exercitationem temporibus ab quod corporis repudiandae possimus tempora veritatis porro minus esse quos? Quaerat quis quos asperiores illum! Maiores, natus aliquam facilis a hic repellendus expedita incidunt iusto voluptate quasi ipsum. Iure esse ratione nulla at dignissimos, eaque architecto nam reiciendis cumque fuga sunt, odit ad vero maiores aperiam. Molestias suscipit saepe vitae eveniet officia maiores, deleniti consequuntur consequatur ullam error cupiditate culpa vero rerum dolor qui ipsum distinctio tenetur ipsa nihil perferendis quis. Praesentium voluptates aut cum.
+      <div class="col-sm-12 col-md-7 col-lg-6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam, labore earum dolorum nam eaque molestiae distinctio reprehenderit autem odit iste ex exercitationem temporibus ab quod corporis repudiandae possimus tempora veritatis porro minus esse quos? Quaerat quis quos asperiores illum! Maiores, natus aliquam facilis a hic repellendus expedita incidunt iusto voluptate quasi ipsum. Iure esse ratione nulla at dignissimos, eaque architecto nam reiciendis cumque fuga sunt, odit ad vero maiores aperiam. Molestias suscipit saepe vitae eveniet officia maiores, deleniti consequuntur consequatur ullam error cupiditate culpa vero rerum dolor qui ipsum distinctio tenetur ipsa nihil perferendis quis. Praesentium voluptates aut cum.
       </div>
     </div>
   </div>
@@ -52,6 +135,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam, labore ear
   <script src="node_modules/jquery/dist/jquery.slim.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+  <script src="js/scripts.js"></script>
   <!-- endbuild -->
 </body>
 </html>

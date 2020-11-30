@@ -25,6 +25,7 @@
     "bootstrap": "^4.5.3",
     "bootswatch": "^4.5.3",
     "font-awesome": "^4.7.0",
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
