@@ -35,7 +35,7 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-12 col-md-5 col-lg-4">
+      <div class="col-sm-12 col-md-5 col-lg-4 mb-2">
         <div class="card">
           <div class="card-body">
             <div class="row">
@@ -79,7 +79,7 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row mb-1">
               <div class="col-12 col-sm-auto mx-auto">
                 <h4 class="card-title text-center">
                   Categories
@@ -98,7 +98,7 @@
                     </button>
                   </div>
                   <div class="col">
-                    <button type="button" class="btn btn-link">
+                    <button type="button" class="btn btn-outline-secondary disabled" id="categoryFilterClear">
                       <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
                     </button>
                   </div>
@@ -107,27 +107,171 @@
             </div>
             <div class="row">
               <div class="col">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-secondary active">
-                    <input type="checkbox" autocomplete="off"> Cash
+                <div class="button-group filters-categories">
+                  <button class="btn btn-outline-warning btn-sm active" data-filter="*">show all categories</button>
+                  <button class="btn btn-outline-warning btn-sm" data-filter=".last-used">Last Used</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="btn-group-toggle grid button-group card-categories" data-toggle="buttons">
+                  <label class="btn btn-outline-success m-1 grid-item">
+                    <input type="checkbox" autocomplete="off" value=".food"> Food
                   </label>
-                  <label class="btn btn-outline-secondary active">
-                    <input type="checkbox" autocomplete="off"> Bank A
+                  <label class="btn btn-outline-success m-1 grid-item last-used">
+                    <input type="checkbox" autocomplete="off" value=".health"> Health
                   </label>
-                  <label class="btn btn-outline-secondary">
-                    <input type="checkbox" autocomplete="off"> Bank B
+                  <label class="btn btn-outline-success m-1 grid-item">
+                    <input type="checkbox" autocomplete="off" value=".p-services"> P. Services
+                  </label>
+                  <label class="btn btn-outline-success m-1 grid-item">
+                    <input type="checkbox" autocomplete="off" value=".home"> Home
+                  </label>
+                  <label class="btn btn-outline-success m-1 grid-item last-used">
+                    <input type="checkbox" autocomplete="off" value=".education"> Education
                   </label>
                 </div>
               </div>
             </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-7 col-lg-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam, labore earum dolorum nam eaque molestiae distinctio reprehenderit autem odit iste ex exercitationem temporibus ab quod corporis repudiandae possimus tempora veritatis porro minus esse quos? Quaerat quis quos asperiores illum! Maiores, natus aliquam facilis a hic repellendus expedita incidunt iusto voluptate quasi ipsum. Iure esse ratione nulla at dignissimos, eaque architecto nam reiciendis cumque fuga sunt, odit ad vero maiores aperiam. Molestias suscipit saepe vitae eveniet officia maiores, deleniti consequuntur consequatur ullam error cupiditate culpa vero rerum dolor qui ipsum distinctio tenetur ipsa nihil perferendis quis. Praesentium voluptates aut cum.
+        <div class="row">
+          <div class="col">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">2020</a></li>
+              <li class="breadcrumb-item"><a href="#">November</a></li>
+              <li class="breadcrumb-item active">29</li>
+            </ol>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-auto mb-2 mr-auto">
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">
+              <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Add
+            </button>
+          </div>
+          <div class="col-auto">
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-outline-primary active">
+                <input type="radio" name="options" id="option1" autocomplete="off"> Income
+              </label>
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Expenses
+              </label>
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Transfers
+              </label>
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="options" id="option3" autocomplete="off"> <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row grid-c">
+
+          <div class="col-12 col-sm-6 col-md-4 mb-2 grid-c-item food">
+            <div class="card">
+              <div class="card-header">
+                <small>2020/11/09 Monday</small>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Food</h4>
+                <div class="row">
+                  <div class="col-7">
+                    <h6 class="card-subtitle mb-2 text-muted">Coffee</h6>
+                    <p class="card-text">80 Lps</p>
+                  </div>
+                  <div class="col-5">
+                    <i class="fa fa-info-circle fa-lg fa-2x" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 grid-c-item mb-2 education">
+            <div class="card">
+              <div class="card-header">
+                <small>2020/11/09 Monday</small>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Education</h4>
+                <div class="row">
+                  <div class="col-7">
+                    <h6 class="card-subtitle mb-2 text-muted">Book: UI/UX</h6>
+                    <p class="card-text">300 Lps</p>
+                  </div>
+                  <div class="col-5">
+                    <i class="fa fa-info-circle fa-lg fa-2x" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 grid-c-item mb-2 p-services">
+            <div class="card">
+              <div class="card-header">
+                <small>2020/11/09 Monday</small>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">P. Services</h4>
+                <div class="row">
+                  <div class="col-7">
+                    <h6 class="card-subtitle mb-2 text-muted">Gas</h6>
+                    <p class="card-text">750 Lps</p>
+                  </div>
+                  <div class="col-5">
+                    <i class="fa fa-info-circle fa-lg fa-2x" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 grid-c-item mb-2 health">
+            <div class="card">
+              <div class="card-header">
+                <small>2020/11/09 Monday</small>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Health</h4>
+                <div class="row">
+                  <div class="col-7">
+                    <h6 class="card-subtitle mb-2 text-muted">Pills for Headhache</h6>
+                    <p class="card-text">40 Lps</p>
+                  </div>
+                  <div class="col-5">
+                    <i class="fa fa-info-circle fa-lg fa-2x" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 grid-c-item mb-2 home">
+            <div class="card">
+              <div class="card-header">
+                <small>2020/11/09 Monday</small>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Home</h4>
+                <div class="row">
+                  <div class="col-7">
+                    <h6 class="card-subtitle mb-2 text-muted">Electric Heater</h6>
+                    <p class="card-text">10,525 Lps</p>
+                  </div>
+                  <div class="col-5">
+                    <i class="fa fa-info-circle fa-lg fa-2x" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
       </div>
     </div>
   </div>
